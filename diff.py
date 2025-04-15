@@ -10,6 +10,6 @@ pipe = StableDiffusionPipeline.from_pretrained(
     torch_dtype=torch.float16,
 ).to(device)
 
-propmt = "a photo of an astronaut riding a horse on mars"
+propmt = "a cat sissting by the door"
 
-pipe(propmt).images[0].save("astronaut_rides_horse.png")
+pipe(propmt).images[0].save("cat_sitting.png")

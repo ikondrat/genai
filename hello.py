@@ -1,6 +1,6 @@
-def main():
-    print("Hello from genai!")
+from genaibook.core import get_device
+
+device = get_device()
 
 
-if __name__ == "__main__":
-    main()
+print(f"Using device: {device}")

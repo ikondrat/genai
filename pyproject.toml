@@ -9,5 +9,6 @@ dependencies = [
     "diffusers>=0.33.1",
     "safetensors>=0.5.3",
     "scipy>=1.15.2",
+    "timm==0.9.12",
     "transformers>=4.51.3",
 ]

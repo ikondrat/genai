@@ -4,9 +4,11 @@ import scipy
 synthesiser = pipeline("text-to-audio", "facebook/musicgen-small")
 
 music = synthesiser(
-    "lo-fi music with a soothing melody", forward_params={"do_sample": True}
+    "Generate HD quality of the natural rain sound with the thunderstong in the background",
+    forward_params={"do_sample": True},
 )
 
-scipy.io.wavfile.write(
-    "musicgen_out.wav", rate=music["sampling_rate"], data=music["audio"]
-)
+# scipy.io.mp3.write(
+#     "rain_out.mp3", rate=music["sampling_rate"], data=music["audio"]
+# )
+scipy.io.wavfile.write("rain_out.wav", rate=music["sampling_rate"], data=music["audio"])

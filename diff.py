@@ -13,6 +13,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
 pipe.safety_checker = None
 pipe.requires_safety_checker = False
 
-propmt = "Rabit jumping over the moon"
+# propmt = "Venera planet with a rabbit"
+propmt = "A rabbit in a futuristic city in Venera, digital art, 4k, highly detailed, cinematic lighting"
 
 pipe(propmt).images[0].save("rabit.png")
